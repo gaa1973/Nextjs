@@ -18,11 +18,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className="min-w-screen-md mx-auto p4">
+          <header style={{ backgroundColor: "#09f", color: "#FFF" }}>
+            <h1>Next.jsサンプル</h1>
+            <nav>
+              <a href="/">Home</a> | <a href="/about">About</a>
+            </nav>
+          </header>
+          {children}
+          <footer>
+            <p style={{ background: "#09f", padding: "10px" }}>
+              2025 Next.jsサンプルa
+            </p>
+          </footer>
+        </main>
       </body>
     </html>
   );
