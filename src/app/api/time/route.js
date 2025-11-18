@@ -1,0 +1,10 @@
+//APIとして機能する。JSXを返さないでJSONを返す
+export async function GET(){
+  const nowJST = new Date().toLocaleString("ja-JP",{
+    timeZone:"Asia/Tokyo"
+  });//日本時間を算出して格納
+
+  return Response.json({
+    now:nowJST
+  });
+}

@@ -6,3 +6,5 @@ paramsを２つとる場合は、階層の中のフォルダにないもので�
 〜/category/item
 ※別のフォルダでその名前があれば、そちらが有効になる。categoryのところをparamではなく、別のフォルダが有効になる
 
+[category]/[id]/page.js
+  
